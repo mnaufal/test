@@ -2433,15 +2433,10 @@ function renderTubeResult2(){
   return `<div class="scr" style="background:#111;color:#fff;">
   <div class="tbar" style="background:#1a1a1a;border-bottom:1px solid #333;"><div class="tbar-l"><button class="ibtn" id="btn-back" aria-label="Back">${ICONS.back}</button><span style="font-weight:800;">Theytube</span></div></div>
   <div style="background:#000;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-    <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/hL5mKE4e4uU"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-    </iframe>
+    <a href="https://www.youtube.com/watch?v=hL5mKE4e4uU" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:12px;color:#fff;text-decoration:none;font-weight:800;hover:background:rgba(255,255,255,.2);">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      Watch on YouTube
+    </a>
   </div>
   <div class="scroll" style="padding:1rem;">
     <h3 style="font-size:1rem;font-weight:800;margin-bottom:.6rem;line-height:1.4;">${esc(v.title)}</h3>
@@ -2474,16 +2469,11 @@ function renderIROVideoPlayer(){
       <span style="font-weight:800;">IRO Singapore</span>
     </div>
   </div>
-  <div style="background:#000;aspect-ratio:16/9;width:100%;flex-shrink:0;">
-    <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/hL5mKE4e4uU"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-    </iframe>
+  <div style="background:#000;aspect-ratio:16/9;width:100%;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+    <a href="https://www.youtube.com/watch?v=hL5mKE4e4uU" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:12px;color:#fff;text-decoration:none;font-weight:800;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      Watch on YouTube
+    </a>
   </div>
   <div class="foot" style="background:#1a1a1a;border-top:1px solid #333;">
     <button class="btn-p" id="btn-iro-video-done">Done ${ICONS.arrow}</button>
